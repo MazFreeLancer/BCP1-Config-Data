@@ -3,6 +3,12 @@ application:
   config:
     profile: dev
     description: valor obtenido desde "ms-customer.yml"
+spring:
+  data:
+    mongodb:
+      database: mongodb
+      host: localhost
+      port: 27017
 
   user:
     mzena:
