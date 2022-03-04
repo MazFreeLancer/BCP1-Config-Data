@@ -1,11 +1,18 @@
-server:
-  port: 8085
+application:
+  location: config (Github)
+  config:
+    profile: dev
+    description: valor obtenido desde "ms-payment.yml"
 spring:
   data:
     mongodb:
-      database: paymentdb
+      database: mongodb
       host: localhost
       port: 27017
+server:
+  port: 8085
+
+
 management:
   endpoints:
     enabled-by-default: false
@@ -24,3 +31,14 @@ management:
     env:
       enabled: true
 
+  user:
+    mzena:
+      id: 1000
+      name: Manuel
+      lastname: Zena
+      active: true
+    azena:
+      id: 1001
+      name: Alejandro
+      lastname: Zena
+      active: true
