@@ -1,0 +1,23 @@
+application:
+  location: config (Github)
+  config:
+    profile: dev
+    description: valor obtenido desde "ms-accoutn.yml"
+spring:
+  data:
+    mongodb:
+      database: mongodb
+      host: localhost
+      port: 27017
+
+  user:
+    mzena:
+      id: 1000
+      name: Manuel
+      lastname: Zena
+      active: true
+    azena:
+      id: 1001
+      name: Alejandro
+      lastname: Zena
+      active: true
