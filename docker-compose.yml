@@ -22,3 +22,18 @@ services:
         environment:
             - MONGO_INITDB_ROOT_USERNAME=bootcamp
             - MONGO_INITDB_ROOT_PASSWORD=secret
+            
+    ms-customer:
+        image:  bootcamp2022/ms-customer
+        environment: 
+            - MONGODB_CONNSTRING=mongodb://bootcamp:secret@mongodb
+        restart: always
+        ports:
+            - 8081:8081
+        depends_on:
+            config-server:
+                condition: service_started
+            eureka-server:
+                condition: service_started
+            mongodb:
+                condition: service_started
