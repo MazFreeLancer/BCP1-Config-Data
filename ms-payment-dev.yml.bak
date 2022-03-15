@@ -7,16 +7,10 @@ spring:
   data:
     mongodb:
       database: mongodb
-      #host: localhost
-      host: mongodb
+      host: localhost
       port: 27017
 server:
   port: 8085
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka-server:8761/eureka
 
 
 management:

@@ -2,21 +2,15 @@ application:
   location: config (Github)
   config:
     profile: dev
-    description: valor obtenido desde "ms-payment.yml"
+    description: valor obtenido desde "ms-credit.yml"
 spring:
   data:
     mongodb:
       database: mongodb
-      #host: localhost
-      host: mongodb
+      host: localhost
       port: 27017
 server:
-  port: 8085
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://eureka-server:8761/eureka
+  port: 8083
 
 
 management:
