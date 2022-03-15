@@ -3,14 +3,40 @@ application:
   config:
     profile: dev
     description: valor obtenido desde "ms-accoutn.yml"
+    
 spring:
   data:
     mongodb:
       database: mongodb
-      host: localhost
+      #host: localhost
+      host: mongodb
       port: 27017
+      
 server:
   port: 8082
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka
+
+management:
+  endpoints:
+    enabled-by-default: false
+    web:
+      exposure:
+        include: health, info, refresh, restart, env
+  endpoint:
+    health:
+      enabled: true
+    info:
+      enabled: true
+    refresh:
+      enabled: true
+    restart:
+      enabled: true
+    env:
+      enabled: true
 
   user:
     mzena:
