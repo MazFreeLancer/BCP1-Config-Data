@@ -36,15 +36,3 @@ management:
       enabled: true
     env:
       enabled: true
-
-info:
-  app:
-    name: Spring Boot Actuator Demo
-    web: *
-  hello: Hi there!!!
-
-logging:
-  level:
-    root: info
-  health:
-    show-details: always
