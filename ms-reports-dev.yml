@@ -2,7 +2,8 @@ application:
   location: config (Github)
   config:
     profile: dev
-    description: valor obtenido desde "ms-customer.yml"
+    description: valor obtenido desde "ms-movement.yml"
+    
 spring:
   data:
     mongodb:
@@ -10,9 +11,10 @@ spring:
       host: localhost
       #host: mongodb
       port: 27017
+      
 server:
-  port: 8081
-
+  port: 8089
+  
 eureka:
   client:
     service-url:
@@ -36,15 +38,3 @@ management:
       enabled: true
     env:
       enabled: true
-
-info:
-  app:
-    name: Spring Boot Actuator Demo
-    web: *
-  hello: Hi there!!!
-
-logging:
-  level:
-    root: info
-  health:
-    show-details: always
