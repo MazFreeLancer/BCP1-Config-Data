@@ -2,7 +2,8 @@ application:
   location: config (Github)
   config:
     profile: dev
-    description: valor obtenido desde "ms-customer-dev.yml"
+    description: valor obtenido desde "ms-debitcard-dev.yml"
+    
 spring:
   data:
     mongodb:
@@ -10,9 +11,10 @@ spring:
       host: localhost
       #host: mongodb
       port: 27017
+      
 server:
-  port: 8081
-
+  port: 8087
+  
 eureka:
   client:
     service-url:

@@ -2,7 +2,7 @@ application:
   location: config (Github)
   config:
     profile: dev
-    description: valor obtenido desde "ms-movement.yml"
+    description: valor obtenido desde "ms-movement-dev.yml"
     
 spring:
   data:
